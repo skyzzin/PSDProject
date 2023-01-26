@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #004080;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+header > h1{
+    color: yellow;
+    text-decoration: ;
+}
+header > button{
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    border-radius: 30px;
+    font-size: 40px;
+    margin-top: -15px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+    width: 55em;
+    height: 31em;
+    margin: auto;
+}
+.caixa2{
+    border: 1px solid black;
+    width: 50%;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #004080;
+    border-radius: 10px;
+}
+.cabecalhocx2{
+    display: flex;
+
+}
+.cabecalhocx2  img{
+    width: 70px;
+}
+.cabecalhocx2  img{
+    margin-left: 20px;
+}
+.quantidade{
+    margin-left: 40px;
+    display: flex;
+}
+#qtde{
+    background-color: white;
+    margin-bottom: 31px;
+    margin-top: 6px;
+    
+}
+#qtde  p{
+    padding-top: 10px;
+}
+.quantidade img{
+    width: 40px;
+    background-color: aliceblue;
+    margin-left: 1px;
+    margin-top: 6px;
+    padding-top: 2px;
+    border-radius: 3px;
+}
+.quantidade button{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.locas-produtos{
+    border: solid 1px white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 190px;
+    background-color: white;
+}
+.cabe-localpd{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    margin-top: -21px;
+    padding-top: 4x;
+    background-color: gray;
+    color: white;
+}
+.produtos{
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-right: 150px;
+}
+.valor{
+    border: 1px solid white;
+    padding: 10px;
+}

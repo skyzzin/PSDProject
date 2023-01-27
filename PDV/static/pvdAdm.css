@@ -29,15 +29,14 @@ main{
     display: flex;
     justify-content: space-between;
     border: solid 1px black;
-    width: 55em;
-    height: 31em;
+    height: 32em;
     margin: auto;
 }
 .caixa2{
     border: 1px solid black;
-    width: 50%;
+    width: 25%;
     margin-top: 30px;
-    margin-right: 20px;
+    margin-right: 10px;
     padding: 10px;
     background-color: #004080;
     border-radius: 10px;
@@ -45,21 +44,23 @@ main{
 .cabecalhocx2{
     display: flex;
 
+
 }
 .cabecalhocx2  img{
-    width: 70px;
+    width: 60px;
 }
 .cabecalhocx2  img{
     margin-left: 20px;
 }
 .quantidade{
-    margin-left: 40px;
+    margin-left: 10px;
     display: flex;
 }
 #qtde{
     background-color: white;
     margin-bottom: 31px;
     margin-top: 6px;
+    width: 70px;
     
 }
 #qtde  p{
@@ -96,12 +97,59 @@ main{
     background-color: gray;
     color: white;
 }
+#produtos{}
+.valor{
+    padding: 10px;
+    margin-top: -30px;
+}
+.valor > p{
+    color: white;
+    font-size: 24px;
+}
+.local-valor{
+    background-color: aliceblue;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.butoes{
+    display: flex;
+    justify-content: space-around;
+}
+#cadastrar{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+#cancelar{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
 .produtos{
     border: 1px solid black;
     margin-top: 30px;
-    padding-right: 150px;
+    padding-right: 160px;
+    padding-left: 30px;
+    background-color: rgb(0, 217, 255);
+    border-radius: 0px 10px 0px 0px;
 }
-.valor{
+
+.escolhas {
+    
+}
+.escolhas button{
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    
+}
+#Pd-geral{
     border: 1px solid white;
-    padding: 10px;
+    margin-top: 20px;
+    padding-bottom: 350px;
 }

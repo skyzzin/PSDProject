@@ -15,9 +15,11 @@
     <main>
         <div class="produtos">
             <div class="escolhas">
-                <div id="Todos">Todos</div>
-                <div id="comidas">Comidas</div>
-                <div id="bebidas">Bebidas</div>
+                <button id="todos">Todos</button>
+                <button>Comida</button>
+                <button>Bebidas</button>
+            </div>
+            <div id="Pd-geral">
             </div>
         </div>
         <div class="caixa2">
@@ -28,7 +30,7 @@
                 <div class="ft-codigo"><img src="../imgs/codigo.png" alt=""></div>
                 
                 <div class="quantidade">
-                    <div id="qtde"><p>Quantidade</p></div>
+                    <input type="number" id="qtde">
                     <button id="aumentar">+</button>
                     <button id="diminuir">-</button>
                     <div class="config"><img src="../imgs/configpng.png" alt="">
@@ -43,12 +45,15 @@
                     <p>QTDE</p>
                     <P>Codigo</P>
                 </div>
+                <div id="produtos">
+                    
+                </div>
             </div>
 
             <div class="valor">
-                <p>Valor:</p>
+                <p><b>Valor:</b></p>
                 <div class="local-valor">
-                    <p id="valor">R$0,00</p>
+                    <p id="valor"><b>R$0,00</b></p>
                 </div>
             </div>
 
@@ -63,5 +68,7 @@
 
         </div>
     </main>
+    
+    <script src="../static/script.js"></script>
 </body>
 </html>

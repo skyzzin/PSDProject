@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #004080;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+header > h1{
+    color: yellow;
+    text-decoration: ;
+}
+header > button{
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    border-radius: 30px;
+    font-size: 40px;
+    margin-top: -15px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+    height: 32em;
+    margin: auto;
+}
+.caixa2{
+    border: 1px solid black;
+    width: 25%;
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #004080;
+    border-radius: 10px;
+}
+.cabecalhocx2{
+    display: flex;
+
+
+}
+.cabecalhocx2  img{
+    width: 60px;
+}
+.cabecalhocx2  img{
+    margin-left: 20px;
+}
+.quantidade{
+    margin-left: 10px;
+    display: flex;
+}
+#qtde{
+    background-color: white;
+    margin-bottom: 31px;
+    margin-top: 6px;
+    width: 70px;
+    
+}
+#qtde  p{
+    padding-top: 10px;
+}
+.quantidade img{
+    width: 40px;
+    background-color: aliceblue;
+    margin-left: 1px;
+    margin-top: 6px;
+    padding-top: 2px;
+    border-radius: 3px;
+}
+.quantidade button{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.locas-produtos{
+    border: solid 1px white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 190px;
+    background-color: white;
+}
+.cabe-localpd{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    margin-top: -21px;
+    padding-top: 4x;
+    background-color: gray;
+    color: white;
+}
+#produtos{}
+.valor{
+    padding: 10px;
+    margin-top: -30px;
+}
+.valor > p{
+    color: white;
+    font-size: 24px;
+}
+.local-valor{
+    background-color: aliceblue;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.butoes{
+    display: flex;
+    justify-content: space-around;
+}
+#cadastrar{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+#cancelar{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.produtos{
+    border: 1px solid black;
+    margin-top: 30px;
+    padding-right: 160px;
+    padding-left: 30px;
+    background-color: rgb(0, 217, 255);
+    border-radius: 0px 10px 0px 0px;
+}
+
+.escolhas {
+    
+}
+.escolhas button{
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    
+}
+#Pd-geral{
+    border: 1px solid white;
+    margin-top: 20px;
+    padding-bottom: 350px;
+}

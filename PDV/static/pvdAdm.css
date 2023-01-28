@@ -4,6 +4,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: #2376c9;
 }
 header{
     background-color: #004080;
@@ -13,7 +14,6 @@ header{
 }
 header > h1{
     color: yellow;
-    text-decoration: ;
 }
 header > button{
     padding-bottom: 10px;
@@ -27,23 +27,27 @@ header > button{
 
 main{
     display: flex;
-    justify-content: space-between;
-    border: solid 1px black;
+    justify-content: space-around;
     height: 32em;
     margin: auto;
 }
 .caixa2{
-    border: 1px solid black;
-    width: 25%;
-    margin-top: 30px;
-    margin-right: 10px;
-    padding: 10px;
+    margin-top: 10px;
+    width: 400px;
+    height: 550px;
+    border: 1px solid white;
+    border-radius: 15px;
     background-color: #004080;
-    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 .cabecalhocx2{
     display: flex;
-
+    justify-content: space-around;
+    
 
 }
 .cabecalhocx2  img{
@@ -97,7 +101,9 @@ main{
     background-color: gray;
     color: white;
 }
-#produtos{}
+#produtos{
+
+}
 .valor{
     padding: 10px;
     margin-top: -30px;
@@ -129,27 +135,37 @@ main{
     border: none;
 }
 .produtos{
-    border: 1px solid black;
-    margin-top: 30px;
-    padding-right: 160px;
-    padding-left: 30px;
-    background-color: rgb(0, 217, 255);
-    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    width: 400px;
+    height: 600px;
+    margin-top: 10px;
+    background-color: #004080;
+    border: 3px solid white;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.escolhas{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
 }
 
-.escolhas {
-    
-}
 .escolhas button{
-    padding: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
     border: none;
     font-size: 20px;
-    
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 #Pd-geral{
-    border: 1px solid white;
-    margin-top: 20px;
-    padding-bottom: 350px;
+    width: 90%;
+    height: 80%;
+    background: white;
+    border-radius: 15px;
+}
+.active{
+    background: red;
 }

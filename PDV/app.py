@@ -6,5 +6,9 @@ app = Flask(__name__)
 def index():
     return render_template('login.html')
 
+@app.route('/pdv')
+def pdv():
+    return render_template('pdv.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

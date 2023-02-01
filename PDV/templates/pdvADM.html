@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDV</title>
+    <link rel="stylesheet" href="../static/pvdAdm.css">
+    <script src="../static/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="nm-ng">Nome do mercado</h1>
+        <button id="sair">X</button>
+    </header>
+    <main>
+        <div class="produtos">
+            <div class="escolhas">
+                <button id="todos">Todos</button>
+                <button id="comida">Comida</button>
+                <button id="bebidas">Bebidas</button>
+            </div>
+
+            <div id="Pd-geral">
+
+            </div>
+            
+        </div>
+        <div class="caixa2">
+            <div class="cabecalhocx2">
+
+                <div class="cd-baras">
+                    <p>Código:</p>
+                    <input type="text" id="ip-cd">
+                    <button id="bt-cd">...</button>
+                </div>
+                
+                <div class="quantidade">
+                    <input type="number" id="qtde">
+                    <button id="aumentar">+</button>
+                    <button id="diminuir">-</button>
+                    <div class="config"><img src="../static/imgs/configpng.png" alt="">
+                </div>
+
+                </div>
+            </div>
+
+            <div class="locas-produtos">
+                <div class="cabe-localpd">
+                    <p>Produtos</p>
+                    <p>QTDE</p>
+                    <P>Codigo</P>
+                </div>
+                <div id="produtos">
+                    
+                </div>
+            </div>
+
+            <div class="valor">
+                <p><b>Valor:</b></p>
+                <div class="local-valor">
+                    <p id="valor"><b>R$0,00</b></p>
+                </div>
+            </div>
+
+            <div class="butoes">
+                <button id="cadastrar">
+                    Cadastrar
+                </button>
+                <button id="cancelar">
+                    Cancelar
+                </button>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

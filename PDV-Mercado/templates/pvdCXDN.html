@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pvd-pg1</title>
+    <link rel="stylesheet" href="../static/pvdAdm.css">
 </head>
 <body>
     
@@ -13,27 +14,62 @@
     </header>
     
     <main>
-        <div class="cx-1">
-            <div class="cx-baras"><input type="text" id="codigo-br"></div>
+        <div class="fl-1">
+            <div class="cx-baras">
+                <p>Codigo de Barras:</p>
+                <input type="text" id="codigo-br"></div>
             <div class="cx-quantidade">
+                <p>Quantidade:</p>
                 <input type="text" id="quantidade">
             </div>
-            <div class="cx-acrescimo">
-                <input type="radio" id="acresimo">
-            </div>
-            <div class="cx-desconto">
-                <input type="radio" id="desconto">
-            </div>
+            <input type="checkbox" id="acresimo" class="acresimo" >
+            <input type="checkbox" id="desconto">
         </div>
-        <div class="cx-2">
+        <div class="dizeres">
+            <p>Acresimo</p>
+            <p>Desconto</p>
+        </div>
+        <div class="fl-2">
             <div class="produtos"></div>
             <div class="cxs">
+                <p>Codigo de barras</p>
                 <input type="text" id="ms-cd">
+
+                <p>Quantidade</p>
                 <input type="text" id="ms-qtd">
+
+                <p>Valor unitario</p>
                 <input type="text" id="ms-valor">
+
+                <p>Acresimo/desconto</p>
                 <input type="text" id="ms-acrs">
             </div>
-            <div></div>
+            <div class="img-vltt">
+                <img src="../static/imgs/foto_do_produto.png" alt="foto" width="100px">
+                <div class="valor-total">
+                    <p>Valor total</p>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="fl-3">
+            <div class="sub-avi">
+                <div class="p-sub">
+                    <p>SubTotal</p>
+                    <div class="sub">
+                        <p id="sub-total">R$0,00</p>
+                    </div>
+                </div>
+                <div class=p-avisos>
+                    <p>Avisos</p>
+                    <div class="avisos">
+                        <p>Cupom aberto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config">
+
         </div>
     </main>
 </body>

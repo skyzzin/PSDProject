@@ -15,225 +15,164 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom,#141E7A ,#296AFA);
+    background-image: linear-gradient(to bottom,#2737c7 ,#296AFA);
     height: 50em;
     font-weight: bold;
     background-attachment: scroll;
+    width: 1360px;
+    height: 655px;
+
 }
 header{
-    
-    display: flex;
-    padding: 30px;
-    justify-content: space-between;
-}
-header > h1{
-    color: rgb(238, 255, 3);
-    font-family: 'Lobster';
-    text-shadow: 1px 1px 2px black;
-    margin: 2px;
-    font-size: 40px;
-    animation-name: h1header;
-    animation-duration: 1.5s;
-}
-
-header > button{
-    padding-bottom: 10px;
-    padding-left: 19px;
-    padding-right: 15px;
-    padding-top: 10px;
-    border-radius: 30px;
-    font-size: 40px;
-    margin-top: -15px;
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.705);
-
-}
-
-main{
-    display: flex;
-    justify-content: space-around;
-    height: 32em;
+    background: rgb(41, 121, 240);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
     margin: auto;
-}
-.caixa2{
-    margin-top: 10px;
-    width: 400px;
-    height: 550px;
-    border: 1px solid white;
-    border-radius: 15px;
-    background-color: #004080;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 10px 10px 3px rgba(212, 212, 212, 0.219);
-    
-    
-}
-.h1-cx2 {
-    color: yellow;
-    text-align: center;
 
 }
-.cabecalhocx2{
-    display: flex;
-    justify-content: space-around;
-    
-
-}
-.cabecalhocx2  img{
-    width: 60px;
-}
-.cabecalhocx2  img{
-    margin-left: 20px;
-}
-.cd-baras > p{
-    color: white;
-    font-size: 20px;
-    margin-bottom: -9px;
-}
-#ip-cd{
-    width: 140px;
-    height: 25px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: none;
-}
-#bt-cd{
-    width: 35px;
-    height: 29px;
-    
-}
-.quantidade{
-    margin-left: 10px;
-    display: flex;
-}
-#qtde{
-    background-color: white;
-    margin-bottom: 31px;
-    margin-top: 6px;
-    width: 70px;
-    
-}
-#qtde  p{
-    padding-top: 10px;
-}
-.quantidade img{
-    width: 40px;
-    background-color: aliceblue;
-    margin-left: 1px;
-    margin-top: 6px;
-    padding-top: 2px;
-    border-radius: 3px;
-}
-.quantidade button{
-    font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    padding: 10px;
-}
-
-.locas-produtos{
-    border: solid 1px white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 20px;
-    padding-bottom: 190px;
-    background-color: white;
-}
-.cabe-localpd{
-    display: flex;
+main{
     border: 1px solid black;
-    justify-content: space-around;
-    margin-top: -21px;
-    padding-top: 4x;
-    background-color: gray;
-    color: white;
-}
 
-.valor{
-    padding: 10px;
-    margin-top: -30px;
-}
-.valor > p{
-    color: white;
-    font-size: 24px;
-}
-.local-valor{
-    background-color: aliceblue;
-    padding: 10px;
-    font-size: 25px;
-}
 
-.butoes{
+}
+.fl-1{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+
 }
-#cadastrar{
+.cx-baras > p{
+    color: white;
+    margin-bottom: 2px;
+}
+.cx-quantidade > p{
+    color: white;
+    margin-bottom: 2px;
+}
+#codigo-br{
+    width: 500px;
+    height: 20px;
     padding: 10px;
+    margin-right: 50px;
     border-radius: 10px;
     border: none;
-    font-weight: bold;
 }
-#cancelar{
+#quantidade{
+    width: 500px;
     padding: 10px;
-    font-weight: bold;
+    height: 20px;
     border-radius: 10px;
     border: none;
-    font-weight: bold;
 }
-#receber{
+#acresimo{
+    width: 40px;
+    margin-left: 35px;
+    margin-top: 20px;
     padding: 10px;
-    font-weight: bold;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
+}
+#desconto{
+    width: 40px;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.dizeres{
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+.dizeres > p{
+    margin-left: 10px;
+    color: white;
+}
+.fl-2{
+    display: flex;
 }
 .produtos{
-    display: flex;
-    width: 400px;
-    height: 600px;
-    margin-left: -120px;
-    margin-top: 10px;
-    padding-right: 100px;
-    background-color: #004080;
-    border: 3px solid white;
-    border-radius: 15px;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 2px 10px 15px 3px rgba(212, 212, 212, 0.219);
-}
-.escolhas{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-}
+    background-color: white;
+    width: 800px;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
 
-.escolhas button{
-    border: none;
-    font-size: 20px;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-right: -60px;
-    font-weight: bold;
 }
-.escolhas button:hover {
-    width: 120px;
-    height: 45;
-    background-color: red;
-    color: white;
+.cxs{
+    width: 450px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
     
 }
-
-#Pd-geral{
-    width: 90%;
-    height: 80%;
-    background: white;
-    border-radius: 15px;
-    padding-right: 100px;
-    margin-left: 100px;
+.cxs > input{
+    width: 450px;
+    height: 30px;
+    margin-bottom: 20px;
 }
-.active{
-    background: red;
+.cxs > p{
+    display: flex;
+    justify-content: end;
+}
+/* terminar */
+.img-vltt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    width: 300px;
+    height:270px;
+    padding: 20px;
+}
+.valor-total{
+    margin: ;
+}
+/* terminar */
+.fl-3{
+    border: 1px solid black;
+    padding: 20px;
+}
+.p-sub{
+    font-size: 20px;
+    text-align: end;
+    color: white;
+}
+.sub-avi{
+    display: flex;
+    justify-content: space-around;
+}
+.sub{
+    background-color: #0c4781;
+    width: 500px;
+    height:50px;
+    padding: 5px;
+    text-align: end;
+    color: white;
+    border-radius: 10px;
+}
+.sub > p{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.p-avisos{
+    font-size: 25px;
+    color: white;
+}
+.avisos{
+    background-color: #0c4781;
+    width: 500px;
+    height:50px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.avisos > p{
+    margin-top: 10px;
+    font-size: 30px;
 }

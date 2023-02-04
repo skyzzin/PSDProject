@@ -6,70 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pvd-pg1</title>
     <link rel="stylesheet" href="../static/pvdAdm.css">
+    <script src="../static/script.js" defer></script>
 </head>
 <body>
-    
-    <header>
-        <div id="nm-produto"><h1>Nome do produto</h1></div>
+    <header class="header">
+        <h1 class="title">Nome Do Trabalhador</h1>
     </header>
-    
+
     <main>
         <div class="fl-1">
-            <div class="cx-baras">
-                <p>Codigo de Barras:</p>
-                <input type="text" id="codigo-br"></div>
-            <div class="cx-quantidade">
-                <p>Quantidade:</p>
-                <input type="text" id="quantidade">
+
+            <div>
+                <label for=""> Codigo De Barras :</label>
+                <input type="number" class="c-barras">
             </div>
-            <input type="checkbox" id="acresimo" class="acresimo" >
-            <input type="checkbox" id="desconto">
+
+            
+            <div>
+                <label for="">Quantidade</label>
+                <input type="number" class="c-qt">
+            </div>
+
+            <section>
+                <label for="">Acrescimo</label>
+                <input type="checkbox" name="" id="">
+                
+                <label for="">Desconto</label>
+                <input type="checkbox" name="" id="">
+            </section>
+              
+            </div>
         </div>
-        <div class="dizeres">
-            <p>Acresimo</p>
-            <p>Desconto</p>
-        </div>
+        
         <div class="fl-2">
-            <div class="produtos"></div>
-            <div class="cxs">
-                <p>Codigo de barras</p>
-                <input type="text" id="ms-cd">
-
-                <p>Quantidade</p>
-                <input type="text" id="ms-qtd">
-
-                <p>Valor unitario</p>
-                <input type="text" id="ms-valor">
-
-                <p>Acresimo/desconto</p>
-                <input type="text" id="ms-acrs">
+            <div class="historico"></div>
+            <div class="info">
+                <label for="">Codigo De barras</label>
+                <div class="i-c-barras"></div>
+                <label for="">Quantidade</label>
+                <div class="i-quantidade"></div>
+                <label for="">Valor Unitario</label>
+                <div class="i-valorunitario"></div>
+                <label for="">Acrescimo/Descontoo</label>
+                <div class="i-acrescimo"></div>
             </div>
-            <div class="img-vltt">
-                <img src="../static/imgs/foto_do_produto.png" alt="foto" width="100px">
-                <div class="valor-total">
-                    <p>Valor total</p>
-                    <input type="text">
-                </div>
+
+            <div class="produto">
+                <img src="" alt="">
+                <p>Valor Total</p>
+                <div class="vt">0,99 R$</div>
             </div>
         </div>
+
         <div class="fl-3">
-            <div class="sub-avi">
-                <div class="p-sub">
-                    <p>SubTotal</p>
-                    <div class="sub">
-                        <p id="sub-total">R$0,00</p>
-                    </div>
-                </div>
-                <div class=p-avisos>
-                    <p>Avisos</p>
-                    <div class="avisos">
-                        <p>Cupom aberto</p>
-                    </div>
-                </div>
+            <div>
+                <h1>SubTotal</h1>
+                <div class="subtotal">300,00 R$</div>
             </div>
-        </div>
-        <div class="config">
 
+            <div>
+                <h1>Avisos</h1>
+                <div class="aviso">Cupom Aberto</div>
+            </div>
         </div>
     </main>
 </body>

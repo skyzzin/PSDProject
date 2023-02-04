@@ -48,14 +48,12 @@ body{
 .container input:focus{
     border-bottom: 3px solid dodgerblue;
 }
-input:focus + label,
-input:valid + label{
+input:focus + label{
     position: relative;
     bottom: 50px;
     left: -130px;
     font-size: 10pt;
     transition: all .5s;
-    color: dodgerblue;
 }
 .box{
     display: flex;

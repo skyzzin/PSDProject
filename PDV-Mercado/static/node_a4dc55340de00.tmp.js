@@ -16,7 +16,7 @@
 body{
     color: white;
     font-family: 'Rowdies', Helvetica, sans-serif;
-    background-color: #3C4F66;
+    background-color: #007e97;
 }
 
 .header{
@@ -24,20 +24,14 @@ body{
     height: 100px;
     display: flex;
     align-items: center;
-    background-color: #6382A8;
+    background-color: #074F57;
 }
 .header h1{
     margin-left: 10px;
     color: yellow;
-    margin: auto;
     text-shadow: 1px 1px 2px  rgba(0, 0, 0, 0.658);
 }
-.comandos{
-    display: flex;
-    justify-content: space-around;
-    background-color: #87B2E6;
-    color: black;
-}
+
 .fl-1{
     display: flex;
     justify-content: space-around;
@@ -62,14 +56,14 @@ body{
     display: flex;
     width: 300px;
     height: 100px;
-    font-size: 18px;;
+    font-size: 1px;;
     justify-content: space-around;
     color: white;
     
 }
 .fl-1 label{
     font-size: 25px;
-    margin-right: 10px;
+
 }
 .fl-2{
     display: flex;
@@ -81,7 +75,7 @@ body{
 .historico{
     width: 500px;
     height: 400px;
-    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.253);
+    
     background: white;
 }
 .info{
@@ -89,13 +83,12 @@ body{
     height: 400px;
     border: 1px solid white;
     text-align: end;
-    
 }
 .info label{
     font-size: 15pt;
 }
 .info div{
-    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.253);
+   
     width: 100%;
     height: 40px;
     background: white;
@@ -109,8 +102,8 @@ body{
     align-items: center;
 }
 .produto img{
-    width: 220px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     border: 1px solid white;
 }
 .vt{
@@ -133,12 +126,8 @@ body{
     display: flex;
     flex-direction: column;
 }
-.fl-3  h1{
-    color: rgb(229, 255, 0);
-    text-shadow: 1px 1px  20px black;
-}
 .fl-3 div div{
-    background: #789ECC;
+    background: #0D4781;
     width: 500px;
     height: 100px;
     font-size: 20pt;
@@ -146,5 +135,4 @@ body{
     justify-content: center;
     padding-left: 20px;
     border-radius: 15px;
-    text-shadow: 1px 1px  20px black;
 }

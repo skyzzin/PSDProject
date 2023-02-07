@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="../static/login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header"><h1>Login</h1></div>
-        <form id="logar">
+    <div class="containercadastrar">
+        <div class="header"><h1>Cadastrar</h1></div>
+        <form id="cadastrar">
             <input type="text" placeholder="Nome:" required>
             <input type="password" placeholder="Senha:" required>
-            <button type="submit">Logar</button>
+            <input type="password" placeholder="Senha de acesso:" required>
+            <div class="bt-cadastrar">
+                <button id="cd-gerent">Cadastrar Gerente</button>
+                <button type="cd-fc">Cadastrar Funcionario</button>
+                <button type="cd-dn">Cadastrar Dono</button>
+            </div>
         </form>
         <nav>
-            <a href="cadastrar.html">Cadastrar</a>
+            <a href="login.html">voltar</a>
         </nav>
     </div>
 </body>

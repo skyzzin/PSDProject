@@ -10,13 +10,13 @@
 <body>
     <div class="container">
         <div class="header"><h1>Login</h1></div>
-        <form id="logar">
-            <input type="text" placeholder="Nome:" required>
-            <input type="password" placeholder="Senha:" required>
+        <form id="logar" action="/login" method="post">
+            <input type="text" placeholder="Nome:" required name="lnome">
+            <input type="password" placeholder="Senha:" required name="lsenha">
             <button type="submit">Logar</button>
         </form>
         <nav>
-            <a href="cadastrar.html">Cadastrar</a>
+            <a href="/cadastrar">Cadastrar</a>
         </nav>
     </div>
 </body>

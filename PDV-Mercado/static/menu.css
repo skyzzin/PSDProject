@@ -58,3 +58,15 @@ form{
     cursor: pointer;
     color: dodgerblue;
 }
+.relogio{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    display: flex;
+}
+.site{
+    margin-left: 20px;
+    color: #BFEDEF;
+    font-size: 20pt;
+}

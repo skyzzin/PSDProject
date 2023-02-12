@@ -14,13 +14,17 @@ body{
     background-color: #3C4F66;
 }
 .header{
-    margin-top: 40px;
+    display: flex;
     margin-bottom: -20px;
     color: #BFEDEF;
+    align-items: center;
+    padding: 20px;
+}
+.header a{
+    margin-left: 100px;
 }
 .container{
     background-color: #6382A8;
-    padding: 5px;
     width: 350px;
     height: 450px;
     display: flex;
@@ -97,4 +101,9 @@ a:hover{
 #logar{
     display: flex;
     flex-direction: column;
+}
+.INFOUSER {
+    position: absolute;
+    bottom: 0;
+    font-size: 40pt;
 }

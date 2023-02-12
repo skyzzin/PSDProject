@@ -22,6 +22,14 @@ def Search(nome,senha):
 
     result = cursor.fetchone()
     return result
+
+def SearchID(nome,senha):
+    banco = pymysql.connect(host='localhost', user='root', password='', database='banco')
+    cursor = banco.cursor()
+    cursor.execute('SELECT id FROM user WHERE nome=%s AND senha=%s',(nome,senha))
+
+    result = cursor.fetchone()
+    return result
         
 
 

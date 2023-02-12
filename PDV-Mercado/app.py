@@ -10,16 +10,21 @@ def index():
 def login():
     nome = request.form.get('lnome')
     senha = request.form.get('lsenha')
-    
     res = Search(nome=nome,senha=senha)
-    
-   
-    if res[3] == 'funcionari':
-        return render_template('PVDCX-FUNCIONARIO.html')
-
-
+    id = SearchID(nome=nome,senha=senha)
+    if res:
+        try:
+            id = id[0]
+            return render_template('PVDCX-FUNCIONARIO.html',nome=nome,id=id)
+        except:
+            return render_template('login.html')
     else:
         return render_template('login.html')
+        
+
+
+
+        
 
 @app.route('/cadastrar',methods=['POST',"GET"])
 def cadastrar():
@@ -54,11 +59,11 @@ def close():
     nome = request.form.get('nomec')
     senha = request.form.get('senhac')
     res = Search(nome=nome,senha=senha)
-
     if res:
         return render_template('login.html')
     else:
-        return render_template('PVDCX-FUNCIONARIO.html')
+        return render_template('PVDCX-FUNCIONARIO.html') 
+   
         
         
           

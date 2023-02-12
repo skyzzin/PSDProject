@@ -6,13 +6,18 @@ app = Flask(__name__)
 def index():
     return render_template('login.html')
 
-@app.route('/login', methods=["POST"])
+@app.route('/login', methods=["POST",'GET'])
 def login():
     nome = request.form.get('lnome')
     senha = request.form.get('lsenha')
+    
     res = Search(nome=nome,senha=senha)
-    if res:
+    
+   
+    if res[3] == 'funcionari':
         return render_template('PVDCX-FUNCIONARIO.html')
+
+
     else:
         return render_template('login.html')
 
@@ -43,6 +48,25 @@ def cgadd():
     acesso = 'gerente'
     InsertDB(nome,senha,acesso)
     return render_template('login.html')
+
+@app.route('/close',methods=["POST","GET"])
+def close():
+    nome = request.form.get('nomec')
+    senha = request.form.get('senhac')
+    res = Search(nome=nome,senha=senha)
+
+    if res:
+        return render_template('login.html')
+    else:
+        return render_template('PVDCX-FUNCIONARIO.html')
+        
+        
+          
+        
+       
+        
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

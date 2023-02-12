@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionario</title>
     <link rel="stylesheet" href="../static/pvdAdm.css">
+    <link rel="stylesheet" href="../static/menu.css">
     <script src="../static/script.js" defer></script>
 </head>
 <body>
@@ -13,6 +14,28 @@
         <h1 class="title">Nome Da empresa</h1>
     </header>
     <main>
+        <nav>
+            <ul>
+                <li>
+                    F1 Adicionar Produtos
+                </li>
+
+                <li>
+                    F2 Cancelar Produtos
+                </li>
+
+                <li>
+                    F3 Adicionar Desconto
+                </li>
+
+                <li>F4 Remover Desconto</li>
+
+                <li>
+                    F5 Fecha Caixa
+                </li>
+
+            </ul>
+        </nav>
         <div class="fl-1">
 
         </div>
@@ -48,6 +71,40 @@
                 <div class="aviso">Cupom Aberto</div>
             </div>
         </div>
+
+        <section class="F1 Fmenu">
+            <div class="x1 x">x</div>
+            <h1>Adicionar Produto</h1>
+            <input type="text" placeholder="Codigo De Barra" maxlength="13">
+            <button type="submit">Adicionar</button>
+        </section>
+
+        <section class="F2 Fmenu">
+           <div class="x2 x">x</div>
+           <h1>Cancelamento De Produto</h1>
+        </section>
+
+        <section class="F3 Fmenu">
+            <div class="x3 x">x</div>
+        </section>
+
+        <section class="F4 Fmenu">
+            <div class="x4 x">x</div>
+        </section>
+
+        <section class="F5 Fmenu">
+            <div class="x5 x">x</div>
+            <h1>Finalizar Caixa</h1>
+            <form action="/close" method="post">
+
+            <input type="text" placeholder="Nome" name="nomec">
+            <input type="password" placeholder="Senha" name="senhac">
+
+            <button type="submit">Fecha</button>
+        </form>
+        </section>
+
+        </section>
     </main>
 </body>
 </html>

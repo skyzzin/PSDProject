@@ -8,7 +8,6 @@ def index():
 @app.route('/login', methods=["POST",'GET'])
 def login():
     nome = request.form.get('lnome')
-    nome = nome.upper()
     senha = request.form.get('lsenha')
     res = Search(nome=nome,senha=senha)
     id = SearchID(nome=nome,senha=senha)

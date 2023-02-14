@@ -6,7 +6,7 @@ cursor = banco.cursor()
 def CreateTable():
     banco = pymysql.connect(host='localhost', user='root', password='', database='banco')
     cursor = banco.cursor()
-    cursor.execute('CREATE TABLE IF NOT EXISTS produtos(id INT(10) PRIMARY KEY AUTO_INCREMENT,nome VARCHAR(20),codigo BIGINT)')
+    cursor.execute('CREATE TABLE IF NOT EXISTS produtos(id INT(10) PRIMARY KEY AUTO_INCREMENT,nome VARCHAR(20),codigo BIGINT,preco INT(10))')
     cursor.execute('CREATE TABLE IF NOT EXISTS user (id INT PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(30), senha VARCHAR(30),acesso VARCHAR(10))')
 
 def InsertDB(nome,senha,acesso):

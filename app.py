@@ -5,10 +5,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('login.html')
-
 @app.route('/login', methods=["POST",'GET'])
 def login():
     nome = request.form.get('lnome')
+    nome = nome.upper()
     senha = request.form.get('lsenha')
     res = Search(nome=nome,senha=senha)
     id = SearchID(nome=nome,senha=senha)
@@ -16,16 +16,12 @@ def login():
         try:
             id = id[0]
             return render_template('funcionario.html',nome=nome,id=id)
+            
         except:
             return render_template('login.html')
     else:
         return render_template('login.html')
         
-
-
-
-        
-
 @app.route('/cadastrar',methods=['POST',"GET"])
 def cadastrar():
     return render_template('cadastrar.html')
@@ -41,6 +37,7 @@ def cf():
 @app.route('/cadastrar/fadd',methods=["POST","GET"])
 def cfadd():
     nome = request.form.get('cnome')
+    nome.upper()
     senha = request.form.get('csenha')
     acesso = 'funcionario'
     InsertDB(nome,senha,acesso)
@@ -63,7 +60,8 @@ def close():
         return render_template('login.html')
     else:
         return render_template('funcionario.html') 
-   
+
+
         
         
 if __name__ == '__main__':

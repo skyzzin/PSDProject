@@ -102,8 +102,4 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
-.INFOUSER {
-    position: absolute;
-    bottom: 0;
-    font-size: 40pt;
-}
+

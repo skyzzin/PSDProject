@@ -15,7 +15,7 @@ def login():
     if res:
         try:
             id = id[0]
-            return render_template('PVDCX-FUNCIONARIO.html',nome=nome,id=id)
+            return render_template('funcionario.html',nome=nome,id=id)
         except:
             return render_template('login.html')
     else:
@@ -62,16 +62,9 @@ def close():
     if res:
         return render_template('login.html')
     else:
-        return render_template('PVDCX-FUNCIONARIO.html') 
+        return render_template('funcionario.html') 
    
         
         
-          
-        
-       
-        
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)

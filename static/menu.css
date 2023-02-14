@@ -59,14 +59,56 @@ form{
     color: dodgerblue;
 }
 .relogio{
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 200px;
     display: flex;
+    font-size: 20pt;
 }
 .site{
     margin-left: 20px;
     color: #BFEDEF;
     font-size: 20pt;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #6382A8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.INFOUSER {
+    position: absolute;
+    bottom: 0;
+    font-size: 16pt;
+    color: #BFEDEF;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.ctt{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    justify-content: center;
+    margin-left: 20px;
+}
+.ctt a{
+    text-decoration: none;
+    color: white;
+}
+.ctt img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.ctt div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
